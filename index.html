@@ -13,9 +13,25 @@
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
 </head>
 
+<style>
+    body {
+        background-image: url("image/seoul.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+</style>
+
 <body>
-    <img class="ui centered small circular image" src="image/hsk.jpg">
-    <h1 class="ui centered header">Hyunsuk Kang</h1>
+    <img class="ui centered small circular image" src="image/hsk.jpg" id="profile">
+    <h1 class="ui centered header" style="color:white" id="name">Hyungsuk Kang</h1>
+    <i class="ui centered facebook square icon" />
+    <i class="ui centered github icon" />
+    <i class="ui centered medium icon" />
 </body>
+
+<script>
+    $('#profile').transition('jiggle');
+</script>
 
 </html>
