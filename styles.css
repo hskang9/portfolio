@@ -1,0 +1,17 @@
+#main {
+        background-image: url("image/seoul.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    
+    .pusher > .dimmed {
+        background-image: url("image/seoul.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    
+    i {
+        color: white;
+    }
