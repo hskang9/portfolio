@@ -1,17 +1,65 @@
-#main {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.pushable {
         background-image: url("image/seoul.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
     }
+
+#main2 {
+        background-image: url("image/seoul.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+.pusher {
+    margin-bottom: -10em;
+}
     
-    .pusher > .dimmed {
-        background-image: url("image/seoul.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
     
     i {
         color: white;
     }
+
+    .greetings{
+        color: white;
+        font-size: 100px;
+    }
+
+.typed-cursor{
+    color: white;
+    font-size: 100px;
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+.ui.menu .item {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.column.starter {
+    padding: 100px 15px;
+}

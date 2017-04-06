@@ -14,36 +14,85 @@
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
 </head>
 
-<style>
-    
-</style>
+<body class="pushable">
 
-<body id="main">
-    
-    
+
     <div class="ui vertical left inverted sidebar menu">
-        <div class="ui container">
-            <br></br>
-            <img class="ui centered small circular image" src="image/hsk.jpg" id="profile" />
-            <h1 class="ui centered header" id="name" style="color: snow">Hyungsuk Kang</h1>
-            <br></br>
-        </div>
+        <br></br>
+        <img class="ui centered small circular image" src="image/hsk.jpg" id="profile" />
+        <h1 class="ui centered header" id="name" style="color: snow">Hyungsuk Kang</h1>
+        <br></br>
+        <a class="item"></a>
+
+
+
     </div>
     <div class="ui basic icon top fixed inverted menu">
         <a id="toggle" class="item">
             <i class="sidebar icon"></i>
         </a>
-        
+
     </div>
-    <div class="pusher" id="main">
-        
+    <div class="pusher" id="main2">
+        <main class="ui page grid">
+            <div class="row">
+                <div class="center aligned starter column">
+                    <span class="greetings"></span>
+                    <h1 class="ui header">Semantic UI starter template</h1>
+                    <p>Use this document as a way to quickly start any new project.</p>
+                    <p>All you get is this text and a mostly barebones HTML document.</p>
+                </div>
+            </div>
+        </main>
     </div>
+
     <script>
         $('#toggle').click(function () {
             $('.ui.sidebar').sidebar('toggle');
         });
     </script>
+    <script src="bower_components/typed.js/dist/typed.min.js"></script>
 
+    <script>
+        var greetings = new Array();
+
+        greetings.push("Hello");
+        greetings.push("Bonjour");
+        greetings.push("안녕하세요");
+        greetings.push("你好");
+
+
+        function shuffle(array) {
+            var currentIndex = array.length, temp, randomIndex;
+
+            // While no other elements remains to shuffle...
+            while (0 !== currentIndex /* Secure Code for buffer overflow */) {
+
+                // Pick an element from the array...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temp = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temp;
+            }
+            return array;
+        }
+
+        shuffle(greetings);
+
+        $(function () {
+            $(".greetings").typed({
+                strings: greetings,
+                typeSpeed: 10,
+                backDelay: 5000,
+                startDelay: 200,
+                loop: true,
+                loopCount: false
+            });
+        });
+    </script>
 
 
 </body>
