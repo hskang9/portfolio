@@ -14,7 +14,8 @@
     <script src="semantic/dist/semantic.min.js"></script>
 
     <title>Hyungsuk Kang</title>
-    // Apple touch icons
+    
+    <!--Apple touch icons-->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
@@ -29,14 +30,18 @@
 
 <body class="pushable">
 
-    <!-- Sidebar-->
+    <!--Sidebar-->
     <div class="ui vertical left inverted sidebar menu">
+        <!--Avatar-->
         <br></br>
         <img class="ui centered small circular image" src="assets/images/avatar@2x.png" id="profile" />
         <h1 class="ui centered header" id="name" style="color: snow">Hyungsuk Kang</h1>
         <br></br>
+        <!--Menu item-->
         <a class="item"></a>
     </div>
+
+    <!--Sidebar toggle icon-->
     <div class="ui basic icon top fixed inverted menu">
         <a id="toggle" class="item">
             <i class="sidebar icon"></i>
@@ -48,6 +53,7 @@
         <main class="ui centered page grid">
             <div class="row">
                 <div class="center aligned starter column">
+                    <!-- Dynamic Typing -->
                     <div class="typed">
                         <span class="greetings"></span>
                     </div>
@@ -70,14 +76,14 @@
             </div>
         </main>
 
-        <!--Sidebar toggle-->
+        <!--Sidebar toggle.js-->
         <script>
             $('#toggle').click(function () {
                 $('.ui.sidebar').sidebar('toggle');
             });
         </script>
 
-        <!--Dynamic typing-->
+        <!--Dynamic typing.js-->
         <script src="bower_components/typed.js/dist/typed.min.js"></script>
         <script>
             var greetings = new Array();

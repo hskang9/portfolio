@@ -58,7 +58,7 @@ i {
 
 #sec {
     display: flex;
-    flex: 0 0 500px;
+    width: 80vw;
     background-color: rgba(0, 0, 0, 0.75);
     margin-top: 50px;
     color: white;
