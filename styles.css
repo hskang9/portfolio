@@ -3,25 +3,14 @@ body {
     padding: 0;
 }
 
-.pushable {
-        background-image: url("assets/images/seoul.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
 
-#main2 {
+#bg {
         background-image: url("assets/images/seoul-min.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
     }
 
-.pusher {
-    margin-bottom: -10em;
-}
-    
-    
 i {
         color: white;
     }
@@ -63,6 +52,17 @@ i {
     font-size: 0.9rem;
 }
 
+
+
+#sec {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 80%;
+    margin-top: -80px;
+    padding: 200px 15px;
+    color: white;
+}
+
 .column.starter {
-    padding: 100px 15px;
+    padding: 100px;
 }
