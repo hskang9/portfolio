@@ -13,10 +13,8 @@
         crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
 
-    <!-- Load egjs packaged with all dependencies (Hammer.js) -->
-    <!-- Load from your local installation -->
-    <script src="bower_components/egjs/dist/pkgd/eg.pkgd.min.js"></script>
     <title>Hyungsuk Kang</title>
+    // Apple touch icons
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
@@ -31,7 +29,7 @@
 
 <body class="pushable">
 
-
+    <!-- Sidebar-->
     <div class="ui vertical left inverted sidebar menu">
         <br></br>
         <img class="ui centered small circular image" src="assets/images/avatar@2x.png" id="profile" />
@@ -43,8 +41,9 @@
         <a id="toggle" class="item">
             <i class="sidebar icon"></i>
         </a>
-
     </div>
+
+    <!-- Main contents -->
     <div class="pusher" id="bg">
         <main class="ui centered page grid">
             <div class="row">
@@ -55,19 +54,31 @@
                 </div>
             </div>
             <div class="row">
+                <!--Intro-->
                 <div class="ui segment" id="sec">
-                    <p>kjhk</p>
+                    <p>Hello World</p>
                 </div>
+                <!--Projects-->
+                <div class="ui segment" id="sec">
+                    <p>Projects</p>
+                </div>
+                <!--Timeline-->
+                <div class="ui segment" id="sec">
+                    <p>Timeline</p>
+                </div>
+
             </div>
         </main>
 
+        <!--Sidebar toggle-->
         <script>
             $('#toggle').click(function () {
                 $('.ui.sidebar').sidebar('toggle');
             });
         </script>
-        <script src="bower_components/typed.js/dist/typed.min.js"></script>
 
+        <!--Dynamic typing-->
+        <script src="bower_components/typed.js/dist/typed.min.js"></script>
         <script>
             var greetings = new Array();
 

@@ -5,10 +5,12 @@ body {
 
 
 #bg {
+        min-height: 1000px; 
         background-image: url("assets/images/seoul-min.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
+        background-attachment: fixed;
     }
 
 i {
@@ -56,13 +58,14 @@ i {
 
 #sec {
     display: flex;
+    flex: 0 0 500px;
     background-color: rgba(0, 0, 0, 0.75);
-    width: 80%;
-    margin-top: -80px;
-    padding: 200px 15px;
+    margin-top: 50px;
     color: white;
 }
 
 .column.starter {
-    padding: 100px;
+    padding: 80px 0px 0px 0px;
+
 }
+
