@@ -14,7 +14,7 @@
     <script src="semantic/dist/semantic.min.js"></script>
 
     <title>Hyungsuk Kang</title>
-    
+
     <!--Apple touch icons-->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png">
@@ -36,23 +36,26 @@
         <br></br>
         <img class="ui centered small circular image" src="assets/images/avatar@2x.png" id="profile" />
         <h1 class="ui centered header" id="name" style="color: snow">Hyungsuk Kang</h1>
-        <br></br>
+
         <!--Menu item-->
-        <a class="item"></a>
+        <a class="item" href="#about">About</a>
+        <a class="item" href="#projects">Projects</a>
+        <a class="item" href="#timeline">Timeline</a>
+        <a class="item" href="#contact">Contact</a>
     </div>
 
     <!--Sidebar toggle icon-->
-    <div class="ui basic icon top fixed inverted menu">
-        <a id="toggle" class="item">
-            <i class="sidebar icon"></i>
-        </a>
-    </div>
+    <button class="mini ui inverted black button menu" id="toggle">
+            <i class="sidebar icon" style="margin:auto;"></i>
+    </button>
+        
+    
 
     <!-- Main contents -->
-    <div class="pusher" id="bg">
-        <main class="ui centered page grid">
+    <div class="pusher contents" id="bg">
+        <main class="ui centered page grid ">
             <div class="row">
-                <div class="center aligned starter column">
+                <div class="center aligned">
                     <!-- Dynamic Typing -->
                     <div class="typed">
                         <span class="greetings"></span>
@@ -60,17 +63,29 @@
                 </div>
             </div>
             <div class="row">
-                <!--Intro-->
+                <!--About-->       
                 <div class="ui segment" id="sec">
+                    <a name="about"></a>
                     <p>Hello World</p>
+                    
                 </div>
-                <!--Projects-->
+
+                <!--Projects-->             
                 <div class="ui segment" id="sec">
+                    <a name="projects"></a>
                     <p>Projects</p>
                 </div>
+
                 <!--Timeline-->
                 <div class="ui segment" id="sec">
-                    <p>Timeline</p>
+                    <a name="timeline"></a>
+                    <p>Timeline</p>      
+                </div>
+
+                <!--Contact-->
+                <div class="ui segment" id="sec">
+                    <a name="contact"></a>
+                    <p>Contact</p>
                 </div>
 
             </div>
